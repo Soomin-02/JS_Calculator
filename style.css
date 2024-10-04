@@ -1,0 +1,116 @@
+/* 모든 요소의 기본 여백 제거 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HTML과 Body의 기본 설정 */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border: 3px solid beige;
+    width: 40rem;
+    height: 55rem;
+    padding: 2rem;
+    background-color: rgb(0, 0, 0);
+    border-radius: 1.5rem;
+}
+
+.container_contents {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#nav {
+    height: 2rem;
+}
+
+#nav_buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.2rem;
+    width: 6rem;
+}
+
+.nav-button {
+    width: 100%;
+    height: 100%;
+    border-radius: 100rem;
+    border: none;
+    cursor: pointer;
+}
+
+#display {
+    border: 2px solid lightsalmon;
+    border-radius: 1.2rem;
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 4rem;
+    padding: 2rem;
+    background-color: #848a83; /* 배경색 `추가 */
+    text-align: right;
+}
+
+
+.button {
+    border-radius: 0.75rem;
+    flex: 1 1 calc(25% - 0.2rem);/* 각 버튼의 기본 크기를 설정 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #22201e; /* 버튼 배경색 */
+    border: none;
+    cursor: pointer;
+    height: calc(20% - 0.2rem); /* 버튼 높이를 조정 */
+}
+
+.button:hover {
+    background-color: #5b5858; /* 버튼 호버 시 색상 변화 */
+}
+
+/* 0 버튼에 대한 추가 스타일 */
+.zero {
+    flex: 2 1 calc(50% - 0.2rem); /* 0 버튼이 두 개의 열을 차지하도록 설정 */
+}
+
+#buttons {
+    border: 2px solid rgb(62, 62, 62);
+    border-radius: 0.8rem;
+    margin-top: 1.2rem;
+    width: 100%;
+    height: 36.5rem;
+    display: flex;
+    flex-wrap: wrap; /* 버튼들이 여러 줄로 자동 감싸기 */
+    gap: 0.2rem; /* 버튼 간격 */
+}
+
+.operator{
+    background-color: #faa512;
+}
+
+.function{
+    background-color: #faa512;
+}
+.operator:hover{
+    background-color: #ab6811;
+}.function:hover{
+    background-color: #ab6811;
+}
+
